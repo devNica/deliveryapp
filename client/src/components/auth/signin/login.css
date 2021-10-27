@@ -1,0 +1,57 @@
+.login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    
+}
+
+.card-login{
+    background-color: rgb(49, 49, 49);
+    border: 2px solid rgb(70, 70, 70);
+    padding: 50px;
+    border-radius: 10px;
+    width: 50vh;
+    
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.label{
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif, monospace;
+    font-size: 1.2rem;
+}
+
+.input-email, .input-password{
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    padding: 0.3rem;
+}
+
+.send-credentials{
+    display: flex;
+}
+.send-credentials button{
+    border: none;
+    width: 100vh;
+    padding: 0.3rem;
+    border-radius: 6px;
+    background-color: rgb(255, 166, 0);
+    color: rgb(36, 33, 33);
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.send-credentials button:hover{
+    background-color: rgb(250, 193, 87);
+    box-shadow: 3px 6px 10px black;
+
+}

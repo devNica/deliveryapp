@@ -1,0 +1,61 @@
+.navbar {
+    background-color: rgb(241, 149, 43);
+    padding: 12px;
+    
+}
+
+.brand{
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(43, 40, 40);
+    
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(43, 40, 40) !important;
+}
+
+.shopping{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.orders{
+    margin-right: 0.4rem;
+}
+
+.orders:hover{
+    font-style: italic;
+}
+
+.orders-badge{
+    margin-left: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+    font-family: 'Oswald', sans-serif;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(43, 40, 40);
+    color: rgb(241, 149, 43);
+    position: static;
+   
+}
+
+.brand:hover{
+    color: rgb(43, 40, 40);
+    font-size: 1.4rem;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.nav-link:hover{
+    color: rgb(43, 40, 40) !important;
+    
+    border-radius: 4px;
+}

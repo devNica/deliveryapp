@@ -1,0 +1,142 @@
+/* .product{
+    margin: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(255, 153, 0);
+    border-radius: 6px;
+    width:  250px;
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+    background-color: rgb(14, 16, 27);
+    opacity: 0.5;
+    transition: 0.4s;
+    
+} */
+
+.product-img{
+    width: 230px;
+    height: 170px;
+}
+
+.product:hover{
+    opacity: 1;
+    box-shadow: 1px 4px 8px rgb(255, 153, 0);
+    
+}
+
+.product-name{
+    color: rgb(216, 216, 216);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+
+.product-shopping{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+}
+
+.ps-top{
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 240px;
+    margin-bottom: 0.5rem;
+}
+
+.ps-qty{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(243, 185, 76);
+    border-radius: 50%;
+    color: rgb(32, 31, 31);
+    font-family: 'Oswald', sans-serif;
+    
+    
+}
+
+.ps-add{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    
+    background-color: rgb(32, 31, 31);
+    color: rgb(243, 185, 76);
+}
+
+.ps-add:hover{
+    color: rgb(32, 31, 31);
+    background-color: rgb(243, 185, 76);
+}
+
+.ps-remove{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+
+    /* background-color: rgb(59, 59, 59);
+    color: gray; */
+    background-color: rgb(32, 31, 31); 
+    color: rgb(243, 185, 76);
+}
+
+.ps-remove-disabled{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+    background-color: rgb(59, 59, 59);
+    color: gray;
+}
+
+.ps-remove:hover{
+    color: rgb(32, 31, 31);
+    background-color: rgb(243, 185, 76);
+}
+
+.product-description{
+    color: rgb(216, 216, 216);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+
+}
+
+.product-price{
+    color: rgb(231, 162, 83);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
