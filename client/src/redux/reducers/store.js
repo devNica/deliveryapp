@@ -1,4 +1,4 @@
-import { CLEARPRODUCTS, GETPRODUCTSBYCATEGORYID, REFRESHINFOINITIAL, SETCATEGORIES, SETLOADINGCATEGORIES } from "../actions/types"
+import { CLEARPRODEX, CLEARPRODUCTS, GETPRODEXBYCATEGORYID, GETPRODUCTSBYCATEGORYID, REFRESHINFOINITIAL, SETCATEGORIES, SETLOADINGCATEGORIES } from "../actions/types"
 
 const initialState={
     categories: [],
@@ -33,12 +33,24 @@ export const storeReducer = (state=initialState, action) =>{
                 category: action.payload.category,
                 pex: action.payload.pex
             }
+        
+        case GETPRODEXBYCATEGORYID:
+            return {
+                ...state,
+                pex: action.payload.pex
+            }
 
         case SETLOADINGCATEGORIES:
             return {
                 ...state,
                 loadingCategories: false,
                 categories: []
+            }
+        
+        case CLEARPRODEX:
+            return {
+                ...state,
+                pex: []
             }
         
         case CLEARPRODUCTS:

@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom'
 import Login from '../auth/signin/Login'
 import Home from '../home/Home'
 import ProductsContainer from '../container/Products/ProductsContainer'
-import ContainerCurrentOrder from '../container/currentOrder/ContainerCurrentOrder'
+import CurrentOrderContainer from '../container/currentOrder/CurrentOrderContainer'
 import ContainerItemDetail from '../container/itemDetail/ContainerItemDetail'
 
 const RouterComponent = ({location}) => {
@@ -14,7 +14,7 @@ const RouterComponent = ({location}) => {
             <Route exact path='/signin' component={Login} location={location}/>
             <Route exact path='/home' component={Home} location={location}/>
             <Route exact path='/category/:id/products' component={ProductsContainer} location={location}/>
-            <Route exact path='/order/detail' component={ContainerCurrentOrder} location={location} />
+            <Route exact path='/order/detail' component={CurrentOrderContainer} location={location} />
             <Route exact path='/order/item/:id/detail' component={ContainerItemDetail} location={location} />
         </Fragment>
     )

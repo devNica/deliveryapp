@@ -19,7 +19,6 @@ const Products = ({
   removeProductShoppingCartFromRedux,
   currentOrder_fr,
 }) => {
-  // const [productQty, setProductQty] = useState(0);
   const [currentQty, setCurrentQty] = useState(0);
 
   const handleRemoveProduct = (product) => {
@@ -27,7 +26,7 @@ const Products = ({
       setCurrentQty((prev) => currentQty - 1);
       const qty = currentQty - 1
       const subtotal = qty * parseFloat(product.price)
-      removeProductShoppingCartFromRedux({ ...product, qty, subtotal })
+      removeProductShoppingCartFromRedux({ ...product, qty, subtotal})
     }
   };
 
@@ -36,7 +35,7 @@ const Products = ({
       setCurrentQty((prev) => currentQty +1 );
       const qty = currentQty + 1
       const subtotal = qty * parseFloat(product.price)
-      agregateProductShoppingCartFromRedux({ ...product, qty, subtotal });
+      agregateProductShoppingCartFromRedux({ ...product, qty, subtotal});
     }
   };
 

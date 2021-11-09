@@ -1,3 +1,33 @@
+:root{
+    --bg-primary: #f1952b;
+    --bg-secondary: #290d17;
+    --bg-tertiary: rgba(228, 86, 86, 0.514);
+    --bg-quaternary: #201f1f;
+    --bg-nav-lik: #2b2828;
+    --bg-item-order: rgba(63, 50, 50, 0.514);
+    --bg-dark-gray: #3b3b3b;
+    --bg-dark-primary: #191925;
+    --color-primary: #f5deb3;
+    --color-secondary: #f0f8ff;
+    --color-tertiary: #ffebcd;
+    --color-cuaternary: #e7a253;
+    --color-gray: #808080;
+    --color-dark: #191919;
+
+    --speed: 500ms;
+
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 body{
-    background-color: rgb(41, 13, 23);
+    background-color: var(--bg-secondary);
 }

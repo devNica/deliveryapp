@@ -1,0 +1,102 @@
+.product-extra{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+    /* border: 1px solid antiquewhite; */
+}
+
+.pex-description{
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    color: var(--color-dark);
+    font-size: 1rem;
+}
+
+.pex-shopping{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.pex-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    margin-bottom: 0.75rem;
+}
+
+.pex-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 240px;
+    margin-bottom: 0.5rem;
+}
+
+.pex-qty{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    color: var(--bg-quaternary);
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.pex-add{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: var(--bg-dark-gray);
+}
+
+.pex-add:hover{
+    color: var(--color-secondary);
+    background-color: var(--bg-dark-gray);
+}
+
+.pex-remove{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: var(--bg-dark-gray);
+}
+
+.pex-remove-disabled{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+    background-color: var(--bg-dark-gray);
+    color: var(--color-gray);
+}
+
+.pex-remove:hover{
+    color: var(--color-secondary);
+    background-color: var(--bg-dark-gray);
+}

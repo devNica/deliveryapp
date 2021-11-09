@@ -1,9 +1,19 @@
 .product-container{
+    display: flex;
+}
+
+.l-container{
+    width: 25%;
+}
+
+.r-container{
+    width: 75%;
+}
+
+.grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: 0.5rem;
-    /* height: 100vh; */
-    /* background-color: rgb(27, 27, 29); */
     margin-bottom: 20px;
 }
 
@@ -21,12 +31,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid rgb(255, 153, 0);
+    border: 3px solid var(--bg-primary);
     border-radius: 6px;
     width:  250px;
     text-align: center;
     padding: 5px;
-    color: aliceblue;
+    color: var(--color-secondary);
     background-color: rgb(14, 16, 27);
     opacity: 0.5;
     transition: 0.4s;

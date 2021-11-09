@@ -22,6 +22,13 @@ const store = {
       .then((res) => res.data, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       }),
+
+  prodexByCategoryId: (id) =>
+      http()
+      .get(`${BASEURL}/store/categories/${id}/prodex`)
+      .then((res) => res.data, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+      }),
   
   calculateShippingFee: (data) =>
     http()

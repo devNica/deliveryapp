@@ -1,5 +1,5 @@
 import { api } from "../../service/api"
-import { GETPRODUCTSBYCATEGORYID, REFRESHINFOINITIAL, CLEARPRODUCTS } from "./types"
+import { GETPRODUCTSBYCATEGORYID, REFRESHINFOINITIAL, CLEARPRODUCTS, GETPRODEXBYCATEGORYID, CLEARPRODEX } from "./types"
 
 
 export const clearProductsFromRedux = () => dispatch => {
@@ -42,3 +42,26 @@ export const getProductsByCatIdFromRedux = id => async (dispatch, getState) => {
         console.log(error)
     }
 }
+
+export const getProductExtraByCatIdFromRedux = id => async (dispatch) => {
+    try {
+        const {meta, message} = await api.store.prodexByCategoryId(id)
+        if(meta.service) {
+            dispatch({
+                type: GETPRODEXBYCATEGORYID,
+                payload: {
+                    pex: meta.pex
+                }
+            })
+        } else { console.log(message) }
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const clearProductExtraFromRedux = () => (dispatch) => {
+    dispatch({
+        type: CLEARPRODEX
+    })
+}
+

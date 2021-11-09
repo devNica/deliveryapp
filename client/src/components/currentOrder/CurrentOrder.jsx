@@ -23,9 +23,14 @@ const CurrentOrder = ({ productItem, removeItemShoppingCartFromRedux }) => {
         <div className="container-description">
           <span>{productItem.product}</span>
           <span>{productItem.description}</span>
-          <span>C$ {productItem.subtotal.toFixed(2)}</span>
+          <span>C$ {productItem.accumulatedAmount.toFixed(2)}</span>
         </div>
-        <div className="container-qty">
+        <div className="container-extra">
+          <span className="badge-extra">E</span>
+          <span className="extra-qty">{productItem.accumulatedItems-productItem.qty}</span>
+        </div>
+        <div className="container-main-qty">
+          <span className="badge-main">M</span>
           <span className="item-qty">{productItem.qty}</span>
         </div>
         <div className="container-delete" onClick={()=>handleDeleteItem(productItem.id)}>

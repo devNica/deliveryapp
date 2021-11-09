@@ -1,4 +1,4 @@
-import "./containercurrentorder.css";
+import "./currentordercontainer.css";
 import { connect } from "react-redux";
 import CurrentOrder from "../../currentOrder/CurrentOrder";
 
@@ -9,7 +9,7 @@ const mapStateToProps = (state) => ({
 
 const actionsRedux = {};
 
-const ContainerCurrentOrder = ({ currentOrder, currentAmount }) => {
+const CurrentOrderContainer = ({ currentOrder, currentAmount }) => {
   const listCurrentOrder = currentOrder.map((item, i) => (
     <CurrentOrder productItem={item} key={i}/>
   ));
@@ -26,4 +26,4 @@ const ContainerCurrentOrder = ({ currentOrder, currentAmount }) => {
     );
 };
 
-export default connect(mapStateToProps, actionsRedux)(ContainerCurrentOrder);
+export default connect(mapStateToProps, actionsRedux)(CurrentOrderContainer);

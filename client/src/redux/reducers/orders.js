@@ -1,4 +1,4 @@
-import { AGREGATEPRODUCTSHOPPINGCART, REMOVEITEMSHOPPINGCART, REMOVEPRODUCTSHOPPINGCART, SETSHIPPINGCOST } from "../actions/types"
+import { AGREGATEPRODEXSHOPPINGCART, AGREGATEPRODUCTSHOPPINGCART, REMOVEITEMSHOPPINGCART, REMOVEPRODEXSHOPPINGCART, REMOVEPRODUCTSHOPPINGCART, SETSHIPPINGCOST } from "../actions/types"
 
 const initialState = {
     ordersHistory: [],
@@ -21,6 +21,8 @@ export const ordersReducer = (state=initialState, action) => {
         case REMOVEITEMSHOPPINGCART:
         case REMOVEPRODUCTSHOPPINGCART:
         case AGREGATEPRODUCTSHOPPINGCART:
+        case AGREGATEPRODEXSHOPPINGCART:
+        case REMOVEPRODEXSHOPPINGCART:
             return {
                 ...state,
                 currentOrder: action.payload.currentOrder,

@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgb(241, 149, 43);
+    background-color: var(--bg-primary);
     padding: 12px;
     
 }
@@ -7,14 +7,14 @@
 .brand{
     font-size: 1.3rem;
     font-family: 'Oswald', sans-serif;
-    color: rgb(43, 40, 40);
+    color: var(--bg-nav-lik);
     
 }
 
 .nav-link{
     font-size: 1.3rem;
     font-family: 'Oswald', sans-serif;
-    color: rgb(43, 40, 40) !important;
+    color: var(--bg-nav-lik) !important;
 }
 
 .shopping{
@@ -41,21 +41,21 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgb(43, 40, 40);
-    color: rgb(241, 149, 43);
+    background-color: var(--bg-nav-lik);
+    color: var(--bg-primary);
     position: static;
    
 }
 
 .brand:hover{
-    color: rgb(43, 40, 40);
+    color: var(--bg-nav-lik);
     font-size: 1.4rem;
     font-style: italic;
     border-radius: 4px;
 }
 
 .nav-link:hover{
-    color: rgb(43, 40, 40) !important;
+    color: var(--bg-nav-lik) !important;
     
     border-radius: 4px;
 }

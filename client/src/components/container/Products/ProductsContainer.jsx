@@ -7,6 +7,7 @@ import {
 import Loading from "../../loading/Loading";
 import Products from "../../products/Products";
 import "./productcontainer.css";
+import SummaryContainer from "../Summary/SummaryContainer";
 
 const mapStateToProps = (state) => ({
   loadingProducts_fr: state.store.loadingProducts,
@@ -24,7 +25,7 @@ const ProductsContainer = (props) => {
     getProductsByCatIdFromRedux,
     clearProductsFromRedux,
     loadingProducts_fr,
-    products_fr
+    products_fr,
   } = props;
 
   const getProducts = useCallback(async () => {
@@ -37,17 +38,25 @@ const ProductsContainer = (props) => {
     return () => clearProductsFromRedux();
   }, [getProducts, clearProductsFromRedux]);
 
-  const listProducts = products_fr !== undefined ? products_fr.map((product, i)=>(
-    <div className="product" key={i}>
-      <Products product={product}/>
-    </div>
-  )) : null
+  const listProducts =
+    products_fr !== undefined
+      ? products_fr.map((product, i) => (
+          <div className="product" key={i}>
+            <Products product={product} />
+          </div>
+        ))
+      : null;
 
   return (
     <>
       {loadingProducts_fr ? (
         <div className="product-container">
-          {listProducts}
+          <div className="l-container">
+           <SummaryContainer/>
+          </div>
+          <div className="r-container">
+            <div className="grid">{listProducts}</div>
+          </div>
         </div>
       ) : (
         <div className="loading-products">

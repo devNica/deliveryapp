@@ -7,10 +7,10 @@
 
 .item{
     display: flex;
-    width: 500px;
+    width: 700px;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(63, 50, 50, 0.514);
+    background-color: var(--bg-item-order);
     padding: 0.5rem;
     border-radius: 6px;
 }
@@ -25,12 +25,12 @@
     height: 72px;
     object-fit: cover;
     border-radius: 8%;
-    border: 3px solid rgb(245, 161, 51);
+    border: 3px solid var(--bg-primary);
 }
 
 .container-description{
-    width: 50%;
-    color: wheat;
+    width: 30%;
+    color: var(--color-primary);
     display: flex;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
@@ -38,10 +38,55 @@
     justify-content: space-around;
 }
 
-.container-qty{
+.container-extra{
+    width: 15%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.badge-extra{
+    height: 32px;
+    width: 32px;
+    align-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--bg-tertiary);
+    color: var(--color-secondary);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.extra-qty{
+    height: 32px;
+    width: 32px;
+    align-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--bg-primary);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.container-main-qty{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.badge-main{
+    height: 32px;
+    width: 32px;
+    align-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--bg-tertiary);
+    color: var(--color-secondary);
+    text-align: center;
+    border-radius: 50%;
 }
 
 .item-qty{
@@ -50,19 +95,20 @@
     align-content: center;
     font-family: 'Oswald', sans-serif;
     font-size: 1.3rem;
-    background-color: rgb(245, 161, 51);
+    background-color: var(--bg-primary);
     text-align: center;
     border-radius: 50%;
 }
 
 .container-delete{
+    width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
 }
 .delete-icon{
-    color: wheat;
+    color: var(--color-primary);
     font-size: 1.6rem;
     
 }
